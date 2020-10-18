@@ -40,5 +40,5 @@ history = model.fit(trainX_norm, trainY, epochs=500, batch_size=32, validation_d
 
 # evaluate model
 model = load_model('model_uniform.h5')
-_, acc = model.evaluate(testX_norm, testY, verbose=1)
+loss, acc = model.evaluate(testX_norm, testY, verbose=1)
 
